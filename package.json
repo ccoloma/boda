@@ -1,0 +1,22 @@
+{
+  "name": "boda",
+  "repository": "https://github.com/ccoloma/boda",
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-livereload": "^3.8.1",
+    "tiny-lr": "^0.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}

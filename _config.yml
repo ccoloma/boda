@@ -1,0 +1,47 @@
+# Plugins
+gems:
+- jekyll-sitemap
+safe: true
+
+# Build Settings
+permalink: pretty
+exclude: ['/bin/', 'README.md', 'LICENSE.txt', 'CNAME', 'package.json', '/node_modules/', 'gulpfile.js', '.jshintrc', 'ccoloma.sublime-project', 'ccoloma.sublime-workspace']
+
+# Site Settings
+title: "E+C = Boda"
+email: "estherycarlos.boda.2015@gmail.com"
+description: "Nuestra boda!"
+date: "15 de agosto de 2015"
+baseurl: "/boda"
+url: "ccoloma.github.io"
+googleAnalyticsTrackingId: ""
+googleAnalyticsSiteUrl: ""
+
+# Head
+metaKeywords: "wedding"
+twitterAccount: "@ccescribano"
+
+# Main Block
+mainImage: "main.jpg"
+mainTitle: "Esther &amp; Carlos"
+mainSubtitle: "Because it's happening ;)"
+mainButtons:
+ - {link: "mailto:estherycarlos.boda.2015@gmail.com", text: "¡Escríbenos!", class: "icon-mail"}
+
+# About Block
+aboutTitle: "Sobre nuestra boda"
+aboutDesc: "Aquí podréis encontrar toda la información sobre nuestra boda, aunque siempre podéis mandarnos un correo con cualquier cosa que queráis. Otra cosa es que consigamos tener tiempo para responderos ;)"
+aboutBlock:
+ - {title: "Agenda", icon: "icon-calendar", text: "¿Quieres saber cuándo será todo?"}
+ - {title: "Ubicación", icon: "icon-location", text: "¿Aún no sabes dónde es? Búscalo aquí!"}
+ - {title: "FAQ", icon: "icon-help", text: "Todas las respuestas para esas preguntas que se te pueden pasar por la mente."}
+
+# Location Block
+locationBlockTitle: "Ubicación"
+locationName: "Finca Zamora"
+streetAddress: "Carretera Icod-Santa Cruz TF-320"
+addressLocality: "Los Realejos"
+placeCoordinates: "28.3935872,-16.5702707"
+mapCenterCoordinates: "28.3945872,-16.5711425"
+mapMobileCenterCoordinates: "28.3945872,-16.5711425"
+viewOnGoogleMaps: "Ver en Google Maps"

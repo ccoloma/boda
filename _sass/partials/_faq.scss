@@ -1,0 +1,14 @@
+h1 .faq {
+  color: $faq-color;
+}
+
+.bazzinga {
+  margin: 20px 0;
+}
+
+#faq ul {
+  margin-bottom: 0;
+  li:last-child .response {
+    margin-bottom: 0;
+  }
+}

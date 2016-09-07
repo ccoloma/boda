@@ -1,0 +1,48 @@
+h1 {
+  font-size: 40px;
+  @media #{$medium-up} {
+    font-size: $h1-font-size;
+  }
+  font-family: $serif-font-family;
+  font-weight: bold;
+
+  .agenda {
+    color: $agenda-color;
+  }
+
+  .hotels {
+    color: $hotels-color;
+  }
+
+  .novios {
+    color: $novios-color;
+  }
+
+  .pedida {
+    color: $pedida-color;
+  }
+
+  .gift {
+    color: $gift-color;
+  }
+
+  .confirmation {
+    color: $confirmation-color;
+  }
+}
+
+section {
+  padding-top: $section-padding-top;
+}
+
+.unstyled {
+  list-style: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}

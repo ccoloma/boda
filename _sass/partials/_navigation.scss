@@ -1,0 +1,187 @@
+
+.top-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  padding-top: 15px;
+  .head {
+    color: $top-section-color;
+  }
+
+  a {
+    color: #fff;
+    font-size: 21px;
+    @media #{$medium-up} {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  &.after-scroll {
+    padding-top: 0;
+    .top-header {
+      @media #{$medium-up} {
+        transition-property: all;
+        transition-duration: 1s;
+      }
+      padding: 20px 0 10px;
+      @media #{$medium-up} {
+        padding-top: 15px;
+      }
+    }
+    .header-background {
+      width: 100%;
+      position: fixed;
+      background: #fff;
+      background: rgba(255,255,255,.9);
+      height: 80px;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .icon {
+      transition: all 1s;
+      &:hover {
+        background-color: $top-section-links-color;
+        color: $top-section-color;
+      }
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .icon {
+    border: 2px solid $top-section-color;
+    border-radius: 50%;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,.5);
+    color: $top-section-color;
+    padding: 4px;
+  }
+}
+
+.top-section-title {
+  color: $top-section-color;
+  position: absolute;
+  top: 32%;
+  .head {
+    font-size: 37px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media #{$medium-up} {
+      font-size: 70px;
+    }
+    @media #{$large-up} {
+      font-size: 6em;
+    }
+    font-family: serif;
+    margin-bottom: 20px;
+    .esther {
+      font-family: $serif-font-family;
+      font-size: 53px;
+      @media #{$medium-up} {
+        font-size: 100px;
+      }
+      @media #{$large-up} {
+        font-size: 147px;
+      }
+      line-height: 100%;
+    }
+  }
+  .shadow {
+    background: rgb(255,255,255);
+    background: rgba(255,255,255,.4);
+    border-radius: 10px;
+    display: inline-block;
+  }
+  span.shadow {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    @media #{$medium-up} {
+      font-size: 30px;
+    }
+  }
+  a {
+    font-size: 15px;
+  }
+}
+
+.logo {
+  height: $logo-height;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-light {
+  background-image: url('/img/logo-white.png');
+}
+
+.logo-dark {
+  background-image: url('/img/logo.png');
+}
+
+.explore {
+  position: absolute;
+  font-size: 30px;
+  bottom: 20px;
+}
+
+@mixin icon-background-mixin($color) {
+  &:hover {
+    background-color: $color !important;
+    border-color: $color;
+  }
+}
+
+.top-section.after-scroll {
+
+  a:hover {
+    color: #fff !important;
+  }
+
+  .novios {
+    @include icon-background-mixin($novios-color);
+  }
+
+  .pedida {
+    @include icon-background-mixin($pedida-color);
+  }
+
+  .agenda {
+    @include icon-background-mixin($agenda-color);
+  }
+
+  .location {
+    @include icon-background-mixin($location-color);
+  }
+
+  .faq {
+    @include icon-background-mixin($faq-color);
+  }
+
+  .hotels {
+    @include icon-background-mixin($hotels-color); 
+  }
+
+  .confirmation {
+    @include icon-background-mixin($confirmation-color); 
+  }
+
+  .icon-mail {
+    @include icon-background-mixin($mail-color); 
+  }
+
+  .gift {
+    @include icon-background-mixin($gift-color); 
+  }
+}

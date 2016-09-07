@@ -1,0 +1,31 @@
+// Base Font
+$base-font-size: 15;
+$serif-font-family: "Rouge Script", Georgia, Cambria, "Times New Roman", Times, serif;
+
+// Headings
+$h1-font-size: ($base-font-size * 4) + px;
+$h2-font-size: ($base-font-size * 3.5) + px;
+$h3-font-size: ($base-font-size * 3) + px;
+$h4-font-size: ($base-font-size * 2) + px;
+$h5-font-size: ($base-font-size * 1.5) + px;
+$h6-font-size: ($base-font-size * 1) + px;
+
+// Colors
+$top-section-color: #222;
+$top-section-links-color: rgb(16,66,122);
+$agenda-color: #f99638;
+$location-color: rgb(150, 16, 18);
+$gift-color: rgb(150, 80, 196);
+$confirmation-color: rgb(1, 135, 97);
+$mail-color: rgb(19, 90, 165);
+$novios-color: #78909C;
+$pedida-color: #D81B60;
+$faq-color: #2196F3;
+$hotels-color: #4E342E;
+
+// Sizes
+$section-padding-top: 70px;
+$logo-height: 45px;
+$location-map-height: 700px;
+
+@import "partials/web-fonts";

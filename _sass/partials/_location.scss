@@ -1,0 +1,32 @@
+.location-map {
+  position: relative;
+
+  .canvas-map {
+    height: $location-map-height;
+  }
+
+  .location-description {
+    background-color: #fff;
+    padding-top: 30px;
+    margin: 0;
+    @media #{$medium-up} {
+      position: absolute;
+      top: $location-map-height / 3;
+      left: 50px;
+      padding: 30px 50px 15px;
+    }
+  }
+
+  .icon-location:before {
+    margin-left: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+}
+
+.location-title-icon {
+  color: $location-color;
+}

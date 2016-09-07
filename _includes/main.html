@@ -1,0 +1,20 @@
+<!-- Begin Main Section -->
+<section id="top-section" class="top-section" style="background-image: url('./img/{{ site.mainImage }}');">
+    {% include navigation.html %}
+    <div class="text-center top-section-title columns">
+        {% assign mainText = site.mainTitle | split:"<typeout>" %}
+        <div class="head shadow">
+            <span class="esther">Esther</span>
+            <span class="carlos"> &amp; Carlos</span>
+        </div>
+        <p><span class="shadow">{{ site.mainSubtitle }}</span></p>
+        <p><span class="shadow">{{ site.date }}</span></p>
+        {% for button in site.mainButtons %}
+        <a href="{% if button.permalink != null %} {{ button.permalink | prepend: site.baseurl }} {% else %} {{ button.link }} {% endif %}" class="button radius uppercase {{button.class}}" {% if button.link != null %}target="_blank"{% endif %}>{{ button.text }}</a>
+        {% endfor %}
+    </div>
+    <a href="#novios" class="explore columns text-center">
+        <span class="icon-down-open"></span>
+    </a>
+</section>
+<!-- End Main Section -->
